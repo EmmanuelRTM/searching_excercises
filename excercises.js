@@ -1,16 +1,34 @@
 
 /**1 .- Crear una función que encuentre el número más repetido en un array
 	Ej. Input - [6,1,8,2,3,6,3,2,5,6]
-	Salida -> 6*/
+    Salida -> 6*/
+    /*
+    class NumberInList{
+        constructor(number){
+            this.number=number;
+            this.count=0;
+        }
+    }
+    class listOfNumbers{
+        constructor(){
+            this.lista=[]
+        }
+        addToList(e){
+            this.lista.push(e)
+        }
+    }
 
     function findMostRepeated(array){
         var aux=[];
         var longitud= array.length;
         for(var i = 0; i < longitud ;i++){
+            for( var j= 0; j< longitud;j++){
+                if(){
 
+                }
+            }
         }
-
-    }
+    }*/
     /*
     2.- Crear una función que encuentre las letras en un arreglo de números y regrese un nuevo arreglo de letras
         Ej input -> [8,'e',7,2,'a','d','f',2,3,1,4,3]
@@ -97,7 +115,7 @@
             for(var i= 0 ; i< tamano;i++){
                 //console.log(array[i].name) 
                 if (array[i].name==nombre){
-                    return i
+                    return i;
                 }
             }
             return -1

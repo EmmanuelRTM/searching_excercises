@@ -2,33 +2,41 @@
 /**1 .- Crear una función que encuentre el número más repetido en un array
 	Ej. Input - [6,1,8,2,3,6,3,2,5,6]
     Salida -> 6*/
-    /*
-    class NumberInList{
-        constructor(number){
-            this.number=number;
-            this.count=0;
-        }
-    }
-    class listOfNumbers{
-        constructor(){
-            this.lista=[]
-        }
-        addToList(e){
-            this.lista.push(e)
-        }
-    }
 
-    function findMostRepeated(array){
-        var aux=[];
-        var longitud= array.length;
-        for(var i = 0; i < longitud ;i++){
-            for( var j= 0; j< longitud;j++){
-                if(){
+    let list_for_mod=[6,1,8,2,3,6,3,2,5,6]
+    console.log("input: ",list_for_mod)
 
-                }
+    function calculate_most_repeated_value(list){
+        var aux=[]
+        //Get th number of times that an element is repeated
+        for(var i = 0; i<list.length; i++){
+            if (aux[list[i]]>=0){
+                aux[list[i]]++;
+            }else{
+                aux[list[i]]=1;
             }
         }
-    }*/
+        var maxNumber=0;
+        var maxPosition=0;
+        for (var i=0 ; i< aux.length ;i++){
+            if(aux[i]>maxNumber){
+                maxNumber=aux[i];
+                maxPosition=i;
+            }
+        }
+        return maxPosition
+    }
+    var moda=calculate_most_repeated_value(list_for_mod)
+    console.log("Salida--> ",moda)
+    //crear array auxiliar que cuente
+
+   // aux[num]++
+    //crear array de ordenamiento
+
+    //Input - [6,1,8,2,3,6,3,2,5,6]
+   //Salida -> 6*/cleaa
+
+
     /*
     2.- Crear una función que encuentre las letras en un arreglo de números y regrese un nuevo arreglo de letras
         Ej input -> [8,'e',7,2,'a','d','f',2,3,1,4,3]
